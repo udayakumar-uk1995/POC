@@ -1,10 +1,15 @@
+triger: none
+parameters:
+  - name:ubuntuVersion
+    type:string
+    
 #Your build pipeline references an undefined variable named ‘Image_tag’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
 
 steps:
 - task: Docker@2
-  displayName: build
+  displayName: build docker image
   inputs:
-    containerRegistry: SA001
+    containerRegistry: SA002
     command: build
     Dockerfile: ./Dockerfile
     tags: '$(Image_tag)'
