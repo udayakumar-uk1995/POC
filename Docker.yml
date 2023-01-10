@@ -15,5 +15,4 @@ steps:
   displayName: 'pull ubuntu'
   inputs:
     containerRegistry: '${{ parameters.serviceAccount }}'
-    command: 'pull ubuntu'
-    arguments: '--build-arg ubuntuVersion=$(parameters.ubuntuVersion)'
+    command: 'pull ubuntu:${{ parameters.ubuntuVersion }}'
