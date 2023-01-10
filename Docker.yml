@@ -1,4 +1,4 @@
-triger: none
+
 parameters:
   - name:ubuntuVersion
     type:string
