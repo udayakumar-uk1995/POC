@@ -15,4 +15,4 @@ steps:
   displayName: 'pull ubuntu'
   inputs:
     containerRegistry: '${{ parameters.serviceAccount }}'
-    command: 'pull ubuntu:${{ parameters.ubuntuVersion }}'
+    command: pull ubuntu:${{ parameters.ubuntuVersion }}
